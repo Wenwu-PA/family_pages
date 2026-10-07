@@ -1,0 +1,126 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+img { max-width: 100%; display: block; }
+a { color: #8a3b12; }
+h1, h2, h3 { line-height: 1.25; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Шапка */
+.header { border-bottom: 1px solid #ddd; }
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.logo { font-size: 22px; font-weight: 700; color: #222; text-decoration: none; }
+.header__phone { font-weight: 600; color: #222; text-decoration: none; }
+
+/* Меню категорий */
+.nav { background: #f5f1ea; border-bottom: 1px solid #ddd; }
+.nav__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nav a { color: #222; text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+
+/* Вступление */
+.intro { padding: 32px 0 8px; }
+.intro h1 { margin: 0 0 6px; font-size: 32px; }
+.intro p { margin: 0; color: #555; }
+
+/* Категории и карточки */
+.category { padding: 24px 0 8px; }
+.category h2 {
+  margin: 0 0 16px;
+  padding-bottom: 8px;
+  font-size: 24px;
+  border-bottom: 2px solid #8a3b12;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+.card__img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #eee;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 12px;
+}
+.card__title { margin: 0 0 8px; font-size: 17px; }
+.card__desc { margin: 0 0 8px; font-size: 14px; color: #555; }
+.card__stock { margin: 0 0 8px; font-size: 14px; color: #b00020; }
+
+.prices { list-style: none; margin: auto 0 0; padding: 0; }
+.prices li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 0;
+  border-top: 1px solid #e5e5e5;
+}
+.prices__unit { color: #555; }
+.prices__value { font-weight: 700; white-space: nowrap; }
+
+/* Подвал */
+.footer {
+  margin-top: 32px;
+  padding: 24px 0;
+  background: #f5f1ea;
+  border-top: 1px solid #ddd;
+}
+.footer h2 { margin: 0 0 12px; font-size: 22px; }
+.footer__list { list-style: none; margin: 0; padding: 0; }
+.footer__list li { margin-bottom: 4px; }
+
+/* Планшет и телефон */
+@media (max-width: 768px) {
+  .intro h1 { font-size: 28px; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+}
+
+@media (max-width: 600px) {
+  .header__inner { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .intro { padding-top: 20px; }
+  .intro h1 { font-size: 24px; }
+  .category h2 { font-size: 20px; }
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .card__body { padding: 10px; }
+  .card__title { font-size: 15px; }
+  .prices li { flex-direction: column; gap: 0; }
+}
