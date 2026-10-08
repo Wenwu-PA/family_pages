@@ -1,52 +1,81 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Закатки от Натки</title>
-  <link rel="stylesheet" href="./static/shop/style.css">
+  <link rel="stylesheet" href="./static/shop/css/variables.css">
+  <link rel="stylesheet" href="./static/shop/css/base.css">
+  <link rel="stylesheet" href="./static/shop/css/layout.css">
+  <link rel="stylesheet" href="./static/shop/css/components.css">
+  <link rel="stylesheet" href="./static/shop/css/responsive.css">
+  <link rel="preload" href="./static/shop/fonts/inter-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./static/shop/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./static/shop/css/variables.css">
+  <link rel="stylesheet" href="./static/shop/css/fonts.css">
+  <link rel="stylesheet" href="./static/shop/css/base.css">
+  <link rel="stylesheet" href="./static/shop/css/layout.css">
+  <link rel="stylesheet" href="./static/shop/css/components.css">
+  <link rel="stylesheet" href="./static/shop/css/responsive.css">
 </head>
-<body>
+<body id="top">
 
 <header class="header">
   <div class="container header__inner">
     <a class="logo" href="#top">Закатки от Натки</a>
-    
+    <a class="header__phone" href="tel:89213034722">8-921-303-47-22</a>
   </div>
 </header>
 
 <nav class="nav">
   <div class="container nav__inner">
     
-      <a href="#cat-1">Копчёности</a>
+      <a class="chip" href="#cat-1">Копчёности</a>
     
-      <a href="#cat-2">Мясные изделия и сало</a>
+      <a class="chip" href="#cat-2">Мясные изделия и сало</a>
     
-      <a href="#cat-3">Соленья и маринады</a>
+      <a class="chip" href="#cat-3">Соленья и маринады</a>
     
-      <a href="#cat-4">Закуски, соусы и заправки</a>
+      <a class="chip" href="#cat-4">Закуски, соусы и заправки</a>
     
-      <a href="#cat-5">Соки, компоты и варенье</a>
+      <a class="chip" href="#cat-5">Соки, компоты и варенье</a>
     
+    <a class="chip" href="#contacts">Контакты</a>
   </div>
 </nav>
 
-<main class="container" id="top">
-  <section class="intro">
-    <h1>Закатки от Натки</h1>
-    <p>Домашние заготовки, копчёности и варенье</p>
-  </section>
+<section class="intro">
+  <div class="container">
+    <div class="intro__box">
+      <h1 class="intro__title">Закатки от Натки</h1>
+      <p class="intro__text">Домашние заготовки, копчёности и варенье</p>
+      <div class="intro__actions">
+        <a class="btn btn--primary" href="tel:89213034722">Позвонить</a>
+        
+      </div>
+    </div>
+  </div>
+</section>
 
+<main class="container">
   
     
     <section class="category" id="cat-1">
-      <h2>Копчёности</h2>
+      <h2 class="category__title">Копчёности</h2>
       <div class="grid">
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/kopchenya_02_2.jpg" alt="Грудинка копчёная" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/kopchenya_02_2-480.webp"
+                 srcset="./media/thumbs/kopchenya_02_2-480.webp 480w, ./media/thumbs/kopchenya_02_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Грудинка копчёная"
+                 loading="eager"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Грудинка копчёная</h3>
@@ -64,8 +93,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/kopchenya_03_2.jpg" alt="Мясо копчёное на хрящах" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/kopchenya_03_2-480.webp"
+                 srcset="./media/thumbs/kopchenya_03_2-480.webp 480w, ./media/thumbs/kopchenya_03_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Мясо копчёное на хрящах"
+                 loading="eager"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Мясо копчёное на хрящах</h3>
@@ -83,8 +121,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/kopchenya_04_2.jpg" alt="Форель копчёная" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/kopchenya_04_2-480.webp"
+                 srcset="./media/thumbs/kopchenya_04_2-480.webp 480w, ./media/thumbs/kopchenya_04_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Форель копчёная"
+                 loading="eager"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Форель копчёная</h3>
@@ -102,8 +149,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/kopchenya_05_2.jpg" alt="Окорок свиной копчёный" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/kopchenya_05_2-480.webp"
+                 srcset="./media/thumbs/kopchenya_05_2-480.webp 480w, ./media/thumbs/kopchenya_05_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Окорок свиной копчёный"
+                 loading="eager"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Окорок свиной копчёный</h3>
@@ -121,8 +177,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/kopchenya_06_2.jpg" alt="Куриная грудка копчёная" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/kopchenya_06_2-480.webp"
+                 srcset="./media/thumbs/kopchenya_06_2-480.webp 480w, ./media/thumbs/kopchenya_06_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Куриная грудка копчёная"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Куриная грудка копчёная</h3>
@@ -140,8 +205,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/kopchenya_07_2.jpg" alt="Курица копчёная" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/kopchenya_07_2-480.webp"
+                 srcset="./media/thumbs/kopchenya_07_2-480.webp 480w, ./media/thumbs/kopchenya_07_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Курица копчёная"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Курица копчёная</h3>
@@ -159,8 +233,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/kopchenya_08_2.jpg" alt="Рулет по-деревенски, варёная грудинка со специями" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/kopchenya_08_2-480.webp"
+                 srcset="./media/thumbs/kopchenya_08_2-480.webp 480w, ./media/thumbs/kopchenya_08_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Рулет по-деревенски, варёная грудинка со специями"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Рулет по-деревенски, варёная грудинка со специями</h3>
@@ -183,12 +266,21 @@
   
     
     <section class="category" id="cat-2">
-      <h2>Мясные изделия и сало</h2>
+      <h2 class="category__title">Мясные изделия и сало</h2>
       <div class="grid">
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/raznoe_02_2.jpg" alt="Паштет из куриной печени" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/raznoe_02_2-480.webp"
+                 srcset="./media/thumbs/raznoe_02_2-480.webp 480w, ./media/thumbs/raznoe_02_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Паштет из куриной печени"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Паштет из куриной печени</h3>
@@ -206,8 +298,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/raznoe_03_2.jpg" alt="Холодец из говядины с чесноком" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/raznoe_03_2-480.webp"
+                 srcset="./media/thumbs/raznoe_03_2-480.webp 480w, ./media/thumbs/raznoe_03_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Холодец из говядины с чесноком"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Холодец из говядины с чесноком</h3>
@@ -225,8 +326,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/raznoe_03_2_gxHT8eo.jpg" alt="Холодец «Три мяса» (говядина, свинина, курица)" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/raznoe_03_2_gxHT8eo-480.webp"
+                 srcset="./media/thumbs/raznoe_03_2_gxHT8eo-480.webp 480w, ./media/thumbs/raznoe_03_2_gxHT8eo-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Холодец «Три мяса» (говядина, свинина, курица)"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Холодец «Три мяса» (говядина, свинина, курица)</h3>
@@ -244,8 +354,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/raznoe_04_2.jpg" alt="Грудинка-сало солёное и со специями" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/raznoe_04_2-480.webp"
+                 srcset="./media/thumbs/raznoe_04_2-480.webp 480w, ./media/thumbs/raznoe_04_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Грудинка-сало солёное и со специями"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Грудинка-сало солёное и со специями</h3>
@@ -263,8 +382,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/raznoe_05_2.jpg" alt="Сало солёное и со специями" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/raznoe_05_2-480.webp"
+                 srcset="./media/thumbs/raznoe_05_2-480.webp 480w, ./media/thumbs/raznoe_05_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Сало солёное и со специями"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Сало солёное и со специями</h3>
@@ -282,8 +410,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/raznoe_06_2.jpg" alt="Тушёнка говядина" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/raznoe_06_2-480.webp"
+                 srcset="./media/thumbs/raznoe_06_2-480.webp 480w, ./media/thumbs/raznoe_06_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Тушёнка говядина"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Тушёнка говядина</h3>
@@ -301,8 +438,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/raznoe_07_2.jpg" alt="Тушёнка свинина" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/raznoe_07_2-480.webp"
+                 srcset="./media/thumbs/raznoe_07_2-480.webp 480w, ./media/thumbs/raznoe_07_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Тушёнка свинина"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Тушёнка свинина</h3>
@@ -320,8 +466,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/raznoe_08_2.jpg" alt="Морковь по-корейски" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/raznoe_08_2-480.webp"
+                 srcset="./media/thumbs/raznoe_08_2-480.webp 480w, ./media/thumbs/raznoe_08_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Морковь по-корейски"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Морковь по-корейски</h3>
@@ -344,12 +499,21 @@
   
     
     <section class="category" id="cat-3">
-      <h2>Соленья и маринады</h2>
+      <h2 class="category__title">Соленья и маринады</h2>
       <div class="grid">
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_02_2.jpg" alt="Огурцы по-фински для пиццы и др." loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_02_2-480.webp"
+                 srcset="./media/thumbs/marinady_02_2-480.webp 480w, ./media/thumbs/marinady_02_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Огурцы по-фински для пиццы и др."
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Огурцы по-фински для пиццы и др.</h3>
@@ -367,8 +531,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_03_2.jpg" alt="Огурцы по-фински" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_03_2-480.webp"
+                 srcset="./media/thumbs/marinady_03_2-480.webp 480w, ./media/thumbs/marinady_03_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Огурцы по-фински"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Огурцы по-фински</h3>
@@ -386,8 +559,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_04_2.jpg" alt="Черри маринованные" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_04_2-480.webp"
+                 srcset="./media/thumbs/marinady_04_2-480.webp 480w, ./media/thumbs/marinady_04_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Черри маринованные"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Черри маринованные</h3>
@@ -405,8 +587,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_05_2.jpg" alt="Помидоры в собственном соку" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_05_2-480.webp"
+                 srcset="./media/thumbs/marinady_05_2-480.webp 480w, ./media/thumbs/marinady_05_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Помидоры в собственном соку"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Помидоры в собственном соку</h3>
@@ -424,8 +615,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_06_2.jpg" alt="Соленые помидоры" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_06_2-480.webp"
+                 srcset="./media/thumbs/marinady_06_2-480.webp 480w, ./media/thumbs/marinady_06_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Соленые помидоры"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Соленые помидоры</h3>
@@ -443,8 +643,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_07_2.jpg" alt="Соленые бочковые помидоры" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_07_2-480.webp"
+                 srcset="./media/thumbs/marinady_07_2-480.webp 480w, ./media/thumbs/marinady_07_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Соленые бочковые помидоры"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Соленые бочковые помидоры</h3>
@@ -462,8 +671,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_08_2.jpg" alt="Соленые огурцы" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_08_2-480.webp"
+                 srcset="./media/thumbs/marinady_08_2-480.webp 480w, ./media/thumbs/marinady_08_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Соленые огурцы"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Соленые огурцы</h3>
@@ -481,8 +699,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_09_2.jpg" alt="Огурцы под водочку" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_09_2-480.webp"
+                 srcset="./media/thumbs/marinady_09_2-480.webp 480w, ./media/thumbs/marinady_09_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Огурцы под водочку"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Огурцы под водочку</h3>
@@ -500,8 +727,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_17_2.jpg" alt="Ассорти" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_17_2-480.webp"
+                 srcset="./media/thumbs/marinady_17_2-480.webp 480w, ./media/thumbs/marinady_17_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Ассорти"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Ассорти</h3>
@@ -519,8 +755,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_18_2.jpg" alt="Ассорти маринованное с капустой и патиссонами" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_18_2-480.webp"
+                 srcset="./media/thumbs/marinady_18_2-480.webp 480w, ./media/thumbs/marinady_18_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Ассорти маринованное с капустой и патиссонами"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Ассорти маринованное с капустой и патиссонами</h3>
@@ -538,8 +783,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_19_2.jpg" alt="Свёкла маринованная" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_19_2-480.webp"
+                 srcset="./media/thumbs/marinady_19_2-480.webp 480w, ./media/thumbs/marinady_19_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Свёкла маринованная"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Свёкла маринованная</h3>
@@ -557,8 +811,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_24_2.jpg" alt="Помидоры маринованные кисло-сладкие" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_24_2-480.webp"
+                 srcset="./media/thumbs/marinady_24_2-480.webp 480w, ./media/thumbs/marinady_24_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Помидоры маринованные кисло-сладкие"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Помидоры маринованные кисло-сладкие</h3>
@@ -576,8 +839,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_25_1.jpg" alt="Помидоры кисло-сладкие с морковной ботвой" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_25_1-480.webp"
+                 srcset="./media/thumbs/marinady_25_1-480.webp 480w, ./media/thumbs/marinady_25_1-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Помидоры кисло-сладкие с морковной ботвой"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Помидоры кисло-сладкие с морковной ботвой</h3>
@@ -595,8 +867,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_26_1.jpg" alt="Огурцы маринованные кисло-сладкие" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_26_1-480.webp"
+                 srcset="./media/thumbs/marinady_26_1-480.webp 480w, ./media/thumbs/marinady_26_1-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Огурцы маринованные кисло-сладкие"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Огурцы маринованные кисло-сладкие</h3>
@@ -624,12 +905,21 @@
   
     
     <section class="category" id="cat-4">
-      <h2>Закуски, соусы и заправки</h2>
+      <h2 class="category__title">Закуски, соусы и заправки</h2>
       <div class="grid">
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_10_2.jpg" alt="Солянка грибная" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_10_2-480.webp"
+                 srcset="./media/thumbs/marinady_10_2-480.webp 480w, ./media/thumbs/marinady_10_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Солянка грибная"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Солянка грибная</h3>
@@ -647,8 +937,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_11_2.jpg" alt="Баклажаны по-татарски" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_11_2-480.webp"
+                 srcset="./media/thumbs/marinady_11_2-480.webp 480w, ./media/thumbs/marinady_11_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Баклажаны по-татарски"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Баклажаны по-татарски</h3>
@@ -666,8 +965,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_12_2.jpg" alt="Приправа кисло-сладкая к гарнирам и для супов из помидор с перцем" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_12_2-480.webp"
+                 srcset="./media/thumbs/marinady_12_2-480.webp 480w, ./media/thumbs/marinady_12_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Приправа кисло-сладкая к гарнирам и для супов из помидор с перцем"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Приправа кисло-сладкая к гарнирам и для супов из помидор с перцем</h3>
@@ -685,8 +993,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_13_2.jpg" alt="Тёщин язык из кабачков остренький" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_13_2-480.webp"
+                 srcset="./media/thumbs/marinady_13_2-480.webp 480w, ./media/thumbs/marinady_13_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Тёщин язык из кабачков остренький"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Тёщин язык из кабачков остренький</h3>
@@ -704,8 +1021,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_14_2.jpg" alt="Лечо из баклажан остренькое" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_14_2-480.webp"
+                 srcset="./media/thumbs/marinady_14_2-480.webp 480w, ./media/thumbs/marinady_14_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Лечо из баклажан остренькое"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Лечо из баклажан остренькое</h3>
@@ -723,8 +1049,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_15_2.jpg" alt="Огурцы в аджике" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_15_2-480.webp"
+                 srcset="./media/thumbs/marinady_15_2-480.webp 480w, ./media/thumbs/marinady_15_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Огурцы в аджике"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Огурцы в аджике</h3>
@@ -742,8 +1077,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_16_2.jpg" alt="Огурцы в томатной заливке острые" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_16_2-480.webp"
+                 srcset="./media/thumbs/marinady_16_2-480.webp 480w, ./media/thumbs/marinady_16_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Огурцы в томатной заливке острые"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Огурцы в томатной заливке острые</h3>
@@ -761,8 +1105,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_20_2.jpg" alt="Заправка для борща" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_20_2-480.webp"
+                 srcset="./media/thumbs/marinady_20_2-480.webp 480w, ./media/thumbs/marinady_20_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Заправка для борща"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Заправка для борща</h3>
@@ -780,8 +1133,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_21_2.jpg" alt="Горлодёр, аджика" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_21_2-480.webp"
+                 srcset="./media/thumbs/marinady_21_2-480.webp 480w, ./media/thumbs/marinady_21_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Горлодёр, аджика"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Горлодёр, аджика</h3>
@@ -799,8 +1161,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_22_2.jpg" alt="Огурцы и помидоры чили" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_22_2-480.webp"
+                 srcset="./media/thumbs/marinady_22_2-480.webp 480w, ./media/thumbs/marinady_22_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Огурцы и помидоры чили"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Огурцы и помидоры чили</h3>
@@ -818,8 +1189,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_23_2.jpg" alt="Огурцы в томатной заливке кисло-сладкие" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_23_2-480.webp"
+                 srcset="./media/thumbs/marinady_23_2-480.webp 480w, ./media/thumbs/marinady_23_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Огурцы в томатной заливке кисло-сладкие"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Огурцы в томатной заливке кисло-сладкие</h3>
@@ -842,12 +1222,21 @@
   
     
     <section class="category" id="cat-5">
-      <h2>Соки, компоты и варенье</h2>
+      <h2 class="category__title">Соки, компоты и варенье</h2>
       <div class="grid">
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_27_2.jpg" alt="Сок томатный натуральный с солью" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_27_2-480.webp"
+                 srcset="./media/thumbs/marinady_27_2-480.webp 480w, ./media/thumbs/marinady_27_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Сок томатный натуральный с солью"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Сок томатный натуральный с солью</h3>
@@ -865,8 +1254,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_28_2.jpg" alt="Сок натуральный яблочный без сахара" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_28_2-480.webp"
+                 srcset="./media/thumbs/marinady_28_2-480.webp 480w, ./media/thumbs/marinady_28_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Сок натуральный яблочный без сахара"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Сок натуральный яблочный без сахара</h3>
@@ -884,8 +1282,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_29_2.jpg" alt="Компот из груши и алычи" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_29_2-480.webp"
+                 srcset="./media/thumbs/marinady_29_2-480.webp 480w, ./media/thumbs/marinady_29_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Компот из груши и алычи"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Компот из груши и алычи</h3>
@@ -903,8 +1310,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_30_1.jpg" alt="Компот из ежевики" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_30_1-480.webp"
+                 srcset="./media/thumbs/marinady_30_1-480.webp 480w, ./media/thumbs/marinady_30_1-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Компот из ежевики"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Компот из ежевики</h3>
@@ -922,8 +1338,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_31_2.jpg" alt="Грушевое варенье" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_31_2-480.webp"
+                 srcset="./media/thumbs/marinady_31_2-480.webp 480w, ./media/thumbs/marinady_31_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Грушевое варенье"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Грушевое варенье</h3>
@@ -941,8 +1366,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_32_2.jpg" alt="Варенье из ежевики" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_32_2-480.webp"
+                 srcset="./media/thumbs/marinady_32_2-480.webp 480w, ./media/thumbs/marinady_32_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Варенье из ежевики"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Варенье из ежевики</h3>
@@ -960,8 +1394,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_33_2.jpg" alt="Варенье из абрикосов" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_33_2-480.webp"
+                 srcset="./media/thumbs/marinady_33_2-480.webp 480w, ./media/thumbs/marinady_33_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Варенье из абрикосов"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Варенье из абрикосов</h3>
@@ -979,8 +1422,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_34_2.jpg" alt="Варенье из клубники" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_34_2-480.webp"
+                 srcset="./media/thumbs/marinady_34_2-480.webp 480w, ./media/thumbs/marinady_34_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Варенье из клубники"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Варенье из клубники</h3>
@@ -998,8 +1450,17 @@
         </article>
         
         <article class="card">
-          
-            <img class="card__img" src="./media/products/marinady_35_2.jpg" alt="Варенье вишневое с косточками" loading="lazy">
+                    
+            
+            <img class="card__img"
+                 src="./media/thumbs/marinady_35_2-480.webp"
+                 srcset="./media/thumbs/marinady_35_2-480.webp 480w, ./media/thumbs/marinady_35_2-800.webp 800w"
+                 sizes="(max-width: 600px) 50vw, 280px"
+                 width="800" height="600"
+                 alt="Варенье вишневое с косточками"
+                 loading="lazy"
+                 decoding="async">
+            
           
           <div class="card__body">
             <h3 class="card__title">Варенье вишневое с косточками</h3>
@@ -1024,13 +1485,16 @@
 
 <footer class="footer" id="contacts">
   <div class="container">
-    <h2>Контакты</h2>
+    <h2 class="footer__title">Контакты</h2>
     <ul class="footer__list">
       
       
-      
-      
+      <li>Телефон: <a href="tel:89213034722">8-921-303-47-22</a></li>
     </ul>
+    <div class="footer__actions">
+      <a class="btn btn--light" href="tel:89213034722">Позвонить</a>
+      
+    </div>
   </div>
 </footer>
 

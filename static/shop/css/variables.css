@@ -1,0 +1,39 @@
+:root {
+  /* бежевые */
+  --beige-50: #fbf7f1;
+  --beige-100: #f4ece0;
+  --beige-200: #eadfcc;
+  --beige-300: #dccbb0;
+
+  /* красный: кнопки, цены, акценты */
+  --red: #b3262d;
+  --red-dark: #8f1d23;
+
+  /* бледно-бордовый: заголовки, подвал */
+  --burgundy: #85454f;
+  --burgundy-soft: rgba(133, 69, 79, 0.10);
+
+  /* текст */
+  --text: #2e2420;
+  --text-muted: #6e5d55;
+
+  /* «воздушные» поверхности */
+  --surface: rgba(255, 255, 255, 0.62);
+  --surface-hover: rgba(255, 255, 255, 0.86);
+  --border: rgba(133, 69, 79, 0.16);
+  --border-strong: rgba(133, 69, 79, 0.32);
+
+  /* тени и скругления */
+  --shadow: 0 6px 20px rgba(80, 40, 30, 0.08);
+  --shadow-hover: 0 12px 30px rgba(80, 40, 30, 0.14);
+  --radius: 10px;
+  --radius-sm: 6px;
+
+  /* размеры */
+  --container: 1120px;
+  --gap: 20px;
+
+  /* шрифты */
+  --font-body: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-head: Georgia, "Times New Roman", serif;
+}
